@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Product preview card component</title>
+</head>
+
+<body>
+  <main>
+
+    <picture>
+      <source class="imagen" media="(min-width: 1440px)" srcset="./images/image-product-desktop.jpg">
+      <img class="imagen" src="./images/image-product-mobile.jpg">
+    </picture>
+
+    <div class="cont">  
+      <p class="titulin monserrat">PERFUME</p>
+
+      <h1 class="titulo fraunces">Gabrielle Essence Eau De Parfum</h1>
+
+      <p class="texto monserrat">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+        Perfumer-Creator for the House of CHANEL.</p>
+      
+        <div class="precios">
+        <h1 class="precio fraunces">$149.99</h1>
+        <h1 class="precio2 fraunces">$169.99</h1>
+      </div>
+      <button class="button monserrat"> <img class="carr" src="./images/icon-cart.svg" alt=""> Add to Cart</button>
+    
+    </div>
+
+  </main>
+
+</body>
+
+</html>
