@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+
+:root {
+    --grey: hsl(228, 12%, 48%);
+    --black: hsl(212, 21%, 14%);
+    --green500: hsl(158, 36%, 37%);
+    --green700: hsl(158, 42%, 18%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* *************************************************** */
+
+body {
+    background-color: var(--cream);
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 390px;
+    margin: 30px auto;
+}
+
+.cont {
+    padding: 20px;
+    background-color: var(--white);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: -10px;
+}
+
+.imagen {
+    width: 375px;
+    height: 390px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.titulin {
+    color: var(--grey);
+    font-weight: 500;
+}
+
+.titulo {
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.texto {
+    color: var(--grey);
+    font-weight: 500;
+   line-height: 25px;
+   margin-bottom: 10px;
+}
+
+.precio {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  color: var(--green500);
+  font-size: 28px;
+}
+
+.precio2 {
+  display: inline-block;
+  width: 150px;
+  height: 25px;
+  color: var(--grey);
+  text-decoration: line-through;
+  font-size: 13px;
+}
+.precios {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    height: 80px;
+}
+.button:hover {
+    background-color: var(--green700);
+}
+
+.button {
+    background-color: var(--green500);
+    color: var(--white);
+    height: 50px;
+    width: 335px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.monserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.fraunces {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+/********************************************************************************************************************************************************/
+
+@media (min-width: 1440px) {
+    .titulin {
+        margin-top: 30px;
+    }
+    .titulo {
+        margin-top: 40px;
+    }
+    main {
+        flex-direction: row;
+    }
+    .precios {
+        margin-top: 20px;
+    }
+    .texto {
+        margin-top: 30px;
+    }
+    .cont {
+        margin-top: 0px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+        height: 460px ;
+    }
+    .imagen {
+           border-bottom-left-radius: 10px;
+           border-top-right-radius: 0;
+           height: 500px;
+
+       }
+}
